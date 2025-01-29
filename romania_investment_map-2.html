@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_efc86bd75aa546e6e2a44a8e94c2d6ad {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_efc86bd75aa546e6e2a44a8e94c2d6ad" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_efc86bd75aa546e6e2a44a8e94c2d6ad = L.map(
+                "map_efc86bd75aa546e6e2a44a8e94c2d6ad",
+                {
+                    center: [45.9432, 24.9668],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_90cd187da5bb616167228bc1166606f9 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_efc86bd75aa546e6e2a44a8e94c2d6ad);
+        
+    
+            var marker_de311a176276f268509e5635482db5b8 = L.marker(
+                [45.75, 21.23],
+                {}
+            ).addTo(map_efc86bd75aa546e6e2a44a8e94c2d6ad);
+        
+    
+            var icon_7c46e02b3ff5ace21d3adf01201053b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_de311a176276f268509e5635482db5b8.setIcon(icon_7c46e02b3ff5ace21d3adf01201053b8);
+        
+    
+        var popup_0f026a4345e74ed3500193c2e6744818 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_53c9fb7d351e8e6f1ba15494be486091 = $(`<div id="html_53c9fb7d351e8e6f1ba15494be486091" style="width: 100.0%; height: 100.0%;">Property 1 - Timisoara</div>`)[0];
+            popup_0f026a4345e74ed3500193c2e6744818.setContent(html_53c9fb7d351e8e6f1ba15494be486091);
+        
+
+        marker_de311a176276f268509e5635482db5b8.bindPopup(popup_0f026a4345e74ed3500193c2e6744818)
+        ;
+
+        
+    
+    
+            var marker_830a711eb6cd99b6ff11350172f88447 = L.marker(
+                [45.745, 21.22],
+                {}
+            ).addTo(map_efc86bd75aa546e6e2a44a8e94c2d6ad);
+        
+    
+            var icon_2393c79dcb5345f6ca55b8e71f330527 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_830a711eb6cd99b6ff11350172f88447.setIcon(icon_2393c79dcb5345f6ca55b8e71f330527);
+        
+    
+        var popup_b340fa3ab6709c7ae2581ba314913fdd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dab7d0f9a20b3bfdcfb6dc758ed92265 = $(`<div id="html_dab7d0f9a20b3bfdcfb6dc758ed92265" style="width: 100.0%; height: 100.0%;">Property 2 - Timisoara</div>`)[0];
+            popup_b340fa3ab6709c7ae2581ba314913fdd.setContent(html_dab7d0f9a20b3bfdcfb6dc758ed92265);
+        
+
+        marker_830a711eb6cd99b6ff11350172f88447.bindPopup(popup_b340fa3ab6709c7ae2581ba314913fdd)
+        ;
+
+        
+    
+    
+            var marker_79a6af45e9acadf52c045b3436827f33 = L.marker(
+                [45.755, 21.24],
+                {}
+            ).addTo(map_efc86bd75aa546e6e2a44a8e94c2d6ad);
+        
+    
+            var icon_9ea5e4cbb04797685344ec4824a53062 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_79a6af45e9acadf52c045b3436827f33.setIcon(icon_9ea5e4cbb04797685344ec4824a53062);
+        
+    
+        var popup_dbdb72dbee79f7f62d4eb061b262243b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a02d72724d01944df5ba240e454e096a = $(`<div id="html_a02d72724d01944df5ba240e454e096a" style="width: 100.0%; height: 100.0%;">Property 3 - Timisoara</div>`)[0];
+            popup_dbdb72dbee79f7f62d4eb061b262243b.setContent(html_a02d72724d01944df5ba240e454e096a);
+        
+
+        marker_79a6af45e9acadf52c045b3436827f33.bindPopup(popup_dbdb72dbee79f7f62d4eb061b262243b)
+        ;
+
+        
+    
+    
+            var marker_a7ca3f34faf7b8e4a30d5b019d53e26b = L.marker(
+                [45.76, 21.21],
+                {}
+            ).addTo(map_efc86bd75aa546e6e2a44a8e94c2d6ad);
+        
+    
+            var icon_ed01f775c3593c6501a5195b187acd4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a7ca3f34faf7b8e4a30d5b019d53e26b.setIcon(icon_ed01f775c3593c6501a5195b187acd4e);
+        
+    
+        var popup_72ba53ccfc52cf5e2c95ac4ac9f85799 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c850ab2d84a7e769600486ad3d9a3284 = $(`<div id="html_c850ab2d84a7e769600486ad3d9a3284" style="width: 100.0%; height: 100.0%;">Property 4 - Timisoara</div>`)[0];
+            popup_72ba53ccfc52cf5e2c95ac4ac9f85799.setContent(html_c850ab2d84a7e769600486ad3d9a3284);
+        
+
+        marker_a7ca3f34faf7b8e4a30d5b019d53e26b.bindPopup(popup_72ba53ccfc52cf5e2c95ac4ac9f85799)
+        ;
+
+        
+    
+    
+            var marker_d85f8e5439cbedfffcc845a6fcc0f360 = L.marker(
+                [45.748, 21.205],
+                {}
+            ).addTo(map_efc86bd75aa546e6e2a44a8e94c2d6ad);
+        
+    
+            var icon_afa27f4cc8e68387b5ef31b8a578ee1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d85f8e5439cbedfffcc845a6fcc0f360.setIcon(icon_afa27f4cc8e68387b5ef31b8a578ee1b);
+        
+    
+        var popup_d791de938fab9b01efb4fefa0d635eb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a2db32f7ef9f829c70a5bc7155ab0b5 = $(`<div id="html_5a2db32f7ef9f829c70a5bc7155ab0b5" style="width: 100.0%; height: 100.0%;">Property 5 - Timisoara</div>`)[0];
+            popup_d791de938fab9b01efb4fefa0d635eb8.setContent(html_5a2db32f7ef9f829c70a5bc7155ab0b5);
+        
+
+        marker_d85f8e5439cbedfffcc845a6fcc0f360.bindPopup(popup_d791de938fab9b01efb4fefa0d635eb8)
+        ;
+
+        
+    
+    
+            var marker_952d4681d4ded8a75536d8253d33f92c = L.marker(
+                [47.05, 21.92],
+                {}
+            ).addTo(map_efc86bd75aa546e6e2a44a8e94c2d6ad);
+        
+    
+            var icon_908d8c9b1ebbe0066aea001070fcaa70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_952d4681d4ded8a75536d8253d33f92c.setIcon(icon_908d8c9b1ebbe0066aea001070fcaa70);
+        
+    
+        var popup_43bf01a3172cb5faca941699c43e0d4e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c9ac52434fc4518cf00e580a1c2e4b5 = $(`<div id="html_0c9ac52434fc4518cf00e580a1c2e4b5" style="width: 100.0%; height: 100.0%;">Property 6 - Oradea</div>`)[0];
+            popup_43bf01a3172cb5faca941699c43e0d4e.setContent(html_0c9ac52434fc4518cf00e580a1c2e4b5);
+        
+
+        marker_952d4681d4ded8a75536d8253d33f92c.bindPopup(popup_43bf01a3172cb5faca941699c43e0d4e)
+        ;
+
+        
+    
+    
+            var marker_a9581dc05fc75cf2fdfde85070202e89 = L.marker(
+                [47.055, 21.915],
+                {}
+            ).addTo(map_efc86bd75aa546e6e2a44a8e94c2d6ad);
+        
+    
+            var icon_1e73fd0bd798be11b87e480cb28fa239 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a9581dc05fc75cf2fdfde85070202e89.setIcon(icon_1e73fd0bd798be11b87e480cb28fa239);
+        
+    
+        var popup_30b3dd4584d4934501b4d1481e9dd3cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3b5e9731d7c51641586766cf0a161ab = $(`<div id="html_e3b5e9731d7c51641586766cf0a161ab" style="width: 100.0%; height: 100.0%;">Property 7 - Oradea</div>`)[0];
+            popup_30b3dd4584d4934501b4d1481e9dd3cf.setContent(html_e3b5e9731d7c51641586766cf0a161ab);
+        
+
+        marker_a9581dc05fc75cf2fdfde85070202e89.bindPopup(popup_30b3dd4584d4934501b4d1481e9dd3cf)
+        ;
+
+        
+    
+    
+            var marker_297628c4cb7cec2e0769cd1180be59a7 = L.marker(
+                [47.06, 21.925],
+                {}
+            ).addTo(map_efc86bd75aa546e6e2a44a8e94c2d6ad);
+        
+    
+            var icon_b03f2f8a20df420bf577cd51a0b52d2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_297628c4cb7cec2e0769cd1180be59a7.setIcon(icon_b03f2f8a20df420bf577cd51a0b52d2b);
+        
+    
+        var popup_8a4133bc670083f6eff19fd164cd31bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f1edeb1221d61c88da83a0d5643813e = $(`<div id="html_5f1edeb1221d61c88da83a0d5643813e" style="width: 100.0%; height: 100.0%;">Property 8 - Oradea</div>`)[0];
+            popup_8a4133bc670083f6eff19fd164cd31bc.setContent(html_5f1edeb1221d61c88da83a0d5643813e);
+        
+
+        marker_297628c4cb7cec2e0769cd1180be59a7.bindPopup(popup_8a4133bc670083f6eff19fd164cd31bc)
+        ;
+
+        
+    
+    
+            var marker_6089a8933691642591974b92c71db7cc = L.marker(
+                [47.045, 21.93],
+                {}
+            ).addTo(map_efc86bd75aa546e6e2a44a8e94c2d6ad);
+        
+    
+            var icon_1eb863d4d62fe4998da14f651dbc3774 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6089a8933691642591974b92c71db7cc.setIcon(icon_1eb863d4d62fe4998da14f651dbc3774);
+        
+    
+        var popup_d00f80c243039f96cd3711dd7e7779a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01bcc089f01b943401e204ddd2b62469 = $(`<div id="html_01bcc089f01b943401e204ddd2b62469" style="width: 100.0%; height: 100.0%;">Property 9 - Oradea</div>`)[0];
+            popup_d00f80c243039f96cd3711dd7e7779a9.setContent(html_01bcc089f01b943401e204ddd2b62469);
+        
+
+        marker_6089a8933691642591974b92c71db7cc.bindPopup(popup_d00f80c243039f96cd3711dd7e7779a9)
+        ;
+
+        
+    
+    
+            var marker_14f276dc27e944fbb75861fa92e9c7f5 = L.marker(
+                [47.048, 21.91],
+                {}
+            ).addTo(map_efc86bd75aa546e6e2a44a8e94c2d6ad);
+        
+    
+            var icon_023a73079543f98a5440fb9170cdc3c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_14f276dc27e944fbb75861fa92e9c7f5.setIcon(icon_023a73079543f98a5440fb9170cdc3c4);
+        
+    
+        var popup_540c0325668f17d92dbea274e8642aad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c499d7acd295432f6ae2585afc3afa88 = $(`<div id="html_c499d7acd295432f6ae2585afc3afa88" style="width: 100.0%; height: 100.0%;">Property 10 - Oradea</div>`)[0];
+            popup_540c0325668f17d92dbea274e8642aad.setContent(html_c499d7acd295432f6ae2585afc3afa88);
+        
+
+        marker_14f276dc27e944fbb75861fa92e9c7f5.bindPopup(popup_540c0325668f17d92dbea274e8642aad)
+        ;
+
+        
+    
+    
+            var marker_41056f57f9741388133c66aca2276260 = L.marker(
+                [44.18, 28.64],
+                {}
+            ).addTo(map_efc86bd75aa546e6e2a44a8e94c2d6ad);
+        
+    
+            var icon_08fe89d5bde067858cc8297ac71c0e70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_41056f57f9741388133c66aca2276260.setIcon(icon_08fe89d5bde067858cc8297ac71c0e70);
+        
+    
+        var popup_780d51dc03bc6419cb25c1ae56ebc613 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e28af40a0c992fcdc3056e9c37766aed = $(`<div id="html_e28af40a0c992fcdc3056e9c37766aed" style="width: 100.0%; height: 100.0%;">Property 11 - Constanta</div>`)[0];
+            popup_780d51dc03bc6419cb25c1ae56ebc613.setContent(html_e28af40a0c992fcdc3056e9c37766aed);
+        
+
+        marker_41056f57f9741388133c66aca2276260.bindPopup(popup_780d51dc03bc6419cb25c1ae56ebc613)
+        ;
+
+        
+    
+    
+            var marker_88b77fc728c15a302922fce99b5e32c3 = L.marker(
+                [44.175, 28.63],
+                {}
+            ).addTo(map_efc86bd75aa546e6e2a44a8e94c2d6ad);
+        
+    
+            var icon_a9da73c01ca1a4a66cddb869370adc2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_88b77fc728c15a302922fce99b5e32c3.setIcon(icon_a9da73c01ca1a4a66cddb869370adc2b);
+        
+    
+        var popup_446dc225990d2bffb4b84e235417d1dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8566f94cbc2fa023dcfbfbc72c81b53f = $(`<div id="html_8566f94cbc2fa023dcfbfbc72c81b53f" style="width: 100.0%; height: 100.0%;">Property 12 - Constanta</div>`)[0];
+            popup_446dc225990d2bffb4b84e235417d1dd.setContent(html_8566f94cbc2fa023dcfbfbc72c81b53f);
+        
+
+        marker_88b77fc728c15a302922fce99b5e32c3.bindPopup(popup_446dc225990d2bffb4b84e235417d1dd)
+        ;
+
+        
+    
+    
+            var marker_a214c5880d9ae2858ecd05faeeb747b2 = L.marker(
+                [44.17, 28.645],
+                {}
+            ).addTo(map_efc86bd75aa546e6e2a44a8e94c2d6ad);
+        
+    
+            var icon_613388ebae28e0150024a9a1f79873a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a214c5880d9ae2858ecd05faeeb747b2.setIcon(icon_613388ebae28e0150024a9a1f79873a3);
+        
+    
+        var popup_044282ae26d24d5c38b9e0b681216e69 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58a4bc0ddfb165e68cbaecd030662c03 = $(`<div id="html_58a4bc0ddfb165e68cbaecd030662c03" style="width: 100.0%; height: 100.0%;">Property 13 - Constanta</div>`)[0];
+            popup_044282ae26d24d5c38b9e0b681216e69.setContent(html_58a4bc0ddfb165e68cbaecd030662c03);
+        
+
+        marker_a214c5880d9ae2858ecd05faeeb747b2.bindPopup(popup_044282ae26d24d5c38b9e0b681216e69)
+        ;
+
+        
+    
+    
+            var marker_4311174c8466083c4aa8e968fe2bca10 = L.marker(
+                [44.165, 28.635],
+                {}
+            ).addTo(map_efc86bd75aa546e6e2a44a8e94c2d6ad);
+        
+    
+            var icon_7f26530da3b99f10c94f2aa573636836 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4311174c8466083c4aa8e968fe2bca10.setIcon(icon_7f26530da3b99f10c94f2aa573636836);
+        
+    
+        var popup_27f2e06ba84e69e8e7505a6a4f4608ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a9fca1af03f0c2bc884447cdca184bf = $(`<div id="html_0a9fca1af03f0c2bc884447cdca184bf" style="width: 100.0%; height: 100.0%;">Property 14 - Constanta</div>`)[0];
+            popup_27f2e06ba84e69e8e7505a6a4f4608ec.setContent(html_0a9fca1af03f0c2bc884447cdca184bf);
+        
+
+        marker_4311174c8466083c4aa8e968fe2bca10.bindPopup(popup_27f2e06ba84e69e8e7505a6a4f4608ec)
+        ;
+
+        
+    
+    
+            var marker_58bef4e48ede1a85c052aedbfd2bc9e6 = L.marker(
+                [44.16, 28.65],
+                {}
+            ).addTo(map_efc86bd75aa546e6e2a44a8e94c2d6ad);
+        
+    
+            var icon_6a2b4bc6e3f130ce6e84fe8441d2b122 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_58bef4e48ede1a85c052aedbfd2bc9e6.setIcon(icon_6a2b4bc6e3f130ce6e84fe8441d2b122);
+        
+    
+        var popup_8f3f9265046350943c252ad7caa0b3a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_608ddcd4dc2fb51f15bba24d7ee6089c = $(`<div id="html_608ddcd4dc2fb51f15bba24d7ee6089c" style="width: 100.0%; height: 100.0%;">Property 15 - Constanta</div>`)[0];
+            popup_8f3f9265046350943c252ad7caa0b3a7.setContent(html_608ddcd4dc2fb51f15bba24d7ee6089c);
+        
+
+        marker_58bef4e48ede1a85c052aedbfd2bc9e6.bindPopup(popup_8f3f9265046350943c252ad7caa0b3a7)
+        ;
+
+        
+    
+</script>
+</html>
